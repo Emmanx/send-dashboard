@@ -14,26 +14,11 @@ export const buttonStyles = {
     }
   },
   sizes: {
-    lg: {
-      fontSize: { base: '1.8rem', lg: '2.4rem' },
-      fontWeight: '500',
-      px: '3rem',
-      py: '1.6rem',
-      h: { base: '4.8rem', lg: '6.2rem' }
-    },
     md: {
-      fontSize: { base: '1.4rem', lg: '1.5rem' },
+      fontSize: { base: '1.4rem', lg: '1.6rem' },
       fontWeight: '500',
-      px: '3rem',
-      py: '1.2rem',
-      h: { base: '4.3rem' }
-    },
-    sm: {
-      fontSize: { base: '1.2rem', lg: '1.2rem' },
-      fontWeight: '600',
-      px: '2rem',
-      py: '0.8rem',
-      h: { base: '3.2rem' }
+      px: '1.35rem',
+      py: '1.4rem'
     }
   },
   variants: {

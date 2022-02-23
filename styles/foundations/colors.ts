@@ -1,7 +1,7 @@
 export const colors = {
   brand: {
-    orange: '#FA7937',
-    white: '#fff',
-    grey: '#F7FAFC'
+    blue: '#0746A6',
+    black: '#303030',
+    grey: '#81868C'
   }
 }
