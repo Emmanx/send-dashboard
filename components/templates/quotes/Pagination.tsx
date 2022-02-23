@@ -1,4 +1,4 @@
-import { Flex, HStack, Input, Select, Text } from '@chakra-ui/react'
+import { Flex, HStack, Select, Text } from '@chakra-ui/react'
 import React from 'react'
 
 interface Props {
@@ -25,8 +25,8 @@ export const Pagination = ({
 
   const goToNextPage = () => updateCurrentPage(nextPage)
 
-  const handleChange = (e: any) => {
-    updateItemPerPage(e.target.value)
+  const handleChange: React.ChangeEventHandler<HTMLSelectElement> = (e) => {
+    updateItemPerPage(Number(e.target.value))
   }
 
   return (
