@@ -12,12 +12,12 @@ export const QuoteCard = ({ quote }: Prop) => {
     <Flex
       px={{ base: '1.5rem', md: '4rem' }}
       justify="space-between"
-      align="center"
+      align="flex-start"
       pt="3rem"
       pb="1.5rem"
       overflowX="scroll"
       whiteSpace="nowrap">
-      <Box minW="32rem">
+      <Box minW={{ base: '27rem', md: '32rem' }}>
         <Flex align="center">
           <Image w="2.3rem" mr="2.1rem" src="/icons/quote.svg" />
           <Heading color="brand.blue" fontWeight="600" fontSize={{ base: '1.3rem', md: '1.6rem' }}>
@@ -40,7 +40,7 @@ export const QuoteCard = ({ quote }: Prop) => {
         </Button>
       </Box>
 
-      <Flex minW="55rem">
+      <Flex minW={{ base: '45rem', md: '55rem' }}>
         <Box>
           <Text color="brand.black" fontWeight="600" fontSize={{ base: '1.3rem', md: '1.6rem' }}>
             {quote.pickup.city}, {quote.pickup.country}
@@ -49,7 +49,7 @@ export const QuoteCard = ({ quote }: Prop) => {
             Ready: {new Date(quote.pickup.date).toDateString()}
           </Text>
         </Box>
-        <Image mx="6.5rem" w="1.5rem" src="/icons/arrow.svg" />
+        <Image mx={{ base: '4rem', md: '6.5rem' }} w="1.5rem" src="/icons/arrow.svg" />
         <Box>
           <Text color="brand.black" fontWeight="600" fontSize={{ base: '1.3rem', md: '1.6rem' }}>
             {quote.dropoff.city}, {quote.dropoff.country}
