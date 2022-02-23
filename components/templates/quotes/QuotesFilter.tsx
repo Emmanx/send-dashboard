@@ -65,7 +65,7 @@ const Tab = ({
         </Badge>
       </HStack>
 
-      {active && <Image mt="1.5rem" src="/icons/tab-border.svg" />}
+      {active && <Image w="full" mt="1.5rem" src="/icons/tab-border.svg" />}
     </Box>
   )
 }
