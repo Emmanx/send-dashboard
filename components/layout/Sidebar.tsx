@@ -7,7 +7,14 @@ import { useRouter } from 'next/dist/client/router'
 
 const Sidebar = (): JSX.Element => {
   return (
-    <Flex flexDir="column" w="22.5rem" bg="#F9FAFC" color="#78797A" h="100%" pos="fixed">
+    <Flex
+      display={{ base: 'none', md: 'flex' }}
+      flexDir="column"
+      w="22.5rem"
+      bg="#F9FAFC"
+      color="#78797A"
+      h="100%"
+      pos="fixed">
       <Image mt="2.4rem" ml="1.6rem" src="/images/logo.svg" w="12rem" />
 
       <Box flex="1" h="100%" maxH="100%" overflowY="scroll" py="2rem" mt="0.5rem">

@@ -10,7 +10,7 @@ export const DashboardLayout = ({ children }: Props): JSX.Element => {
   return (
     <Flex h="100vh" w="100%" pos="relative">
       <Sidebar />
-      <Box h="100%" w="100%" pl="22.5rem">
+      <Box h="100%" w="100%" pl={{ base: '0', md: '22.5rem' }}>
         {children}
       </Box>
     </Flex>

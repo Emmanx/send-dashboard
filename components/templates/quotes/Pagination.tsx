@@ -30,8 +30,14 @@ export const Pagination = ({
   }
 
   return (
-    <Flex align="center" justify="flex-end" px="4rem" color="#81868C" my="3rem">
-      <Text>
+    <Flex
+      align="center"
+      justify={{ base: 'center', md: 'flex-end' }}
+      px="4rem"
+      color="#81868C"
+      my="3rem"
+      wrap={{ base: 'wrap', md: 'nowrap' }}>
+      <Text whiteSpace="nowrap">
         Showing {currentCount} - {currentCount + itemsPerPage} of {totalItems} results
       </Text>
       <HStack mx="2.4rem" align="center" spacing="2.4rem" cursor="pointer">

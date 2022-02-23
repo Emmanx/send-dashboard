@@ -17,8 +17,8 @@ export const QuotesFilter = ({ quotes, filter, updateFilter }: Props) => {
 
   return (
     <HStack
-      spacing="3.2rem"
-      px="4rem"
+      spacing={{ base: '1.7rem', md: '3.2rem' }}
+      px={{ base: '1.5rem', md: '4rem' }}
       borderBottom="1px solid #E4E6EA"
       align="flex-start"
       mt="2rem">
